@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthly</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/loginRealizado.css">
+    <!-- Importando a biblioteca RemixIcon corretamente -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-t from-[#000] via-[#000400] to-[#022300] h-screen flex flex-col justify-between">
+
+    <!-- Main Content -->
+    <main class="flex flex-col justify-center items-center text-center flex-grow">
+        <div class="flex flex-col justify-center items-center space-y-8 mt-20">
+            <!-- Logo -->
+            <img src="/img/logo_sem_nome-removebg-preview.png" alt="Logo" class="w-60 h-60">
+
+            <!-- Mensagem -->
+            <p class="text-honeydew text-xl font-bold" id="msg-login">Login Realizado com Sucesso!</p>
+
+            <!-- Botão -->
+            <a href="index.html">
+                <button class="bg-[#DDE85B] text-black text-lg font-bold py-3 px-8 rounded-3xl transition duration-300 hover:bg-[#A2D94B]">
+                    Ver Posts
+                </button>
+            </a>
+
+            <!-- Ícones -->
+            <div class="flex space-x-6 mt-12">
+                <i class="ri-chat-1-line text-[#DDE85B] text-4xl hover:scale-110 transition-transform duration-200 cursor-pointer"></i>
+                <i class="ri-repeat-line text-[#DDE85B] text-4xl hover:scale-110 transition-transform duration-200 cursor-pointer"></i>
+                <i class="ri-heart-line text-[#DDE85B] text-4xl hover:scale-110 transition-transform duration-200 cursor-pointer"></i>
+                <i class="ri-bar-chart-line text-[#DDE85B] text-4xl hover:scale-110 transition-transform duration-200 cursor-pointer"></i>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black p-4 fixed bottom-0 w-full">
+        <nav class="flex justify-around">
+            <ul class="flex space-x-8">
+                <li><i class="ri-home-2-line text-white text-3xl cursor-pointer hover:text-[#DDE85B] transition duration-300"></i></li>
+                <li><i class="ri-search-line text-white text-3xl cursor-pointer hover:text-[#DDE85B] transition duration-300"></i></li>
+                <li><i class="ri-add-box-line text-white text-3xl cursor-pointer hover:text-[#DDE85B] transition duration-300"></i></li>
+                <li><i class="ri-notification-line text-white text-3xl cursor-pointer hover:text-[#DDE85B] transition duration-300"></i></li>
+                <li><i class="ri-mail-line text-white text-3xl cursor-pointer hover:text-[#DDE85B] transition duration-300"></i></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

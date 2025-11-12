@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthly</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/procurarUser.css">
+    <!-- Importando a biblioteca RemixIcon corretamente -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+    <nav id="nav-top">
+        <div id="search-bar-top">
+            <i style="margin: 4vw;" class="ri-search-line"></i>
+            <input id="input-search" type="text" placeholder="Search">
+        </div>
+        <button style="margin: 4vw;" id="btn-cancel">Cancel</button>
+    </nav>
+    </header>
+
+    <main>
+        <p style="margin-left: 3vw;" id="p-recent-search">Recent</p>
+
+        <div id="recent-users">
+            <div id="recent-users-left">
+                <i id="font-users" class="ri-user-line"></i>
+                <p  class="font-users" id="p-user-name">Perfil</p>
+            </div>
+            <i id="font-users" class="ri-close-line"></i>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-black p-4 fixed bottom-0 w-full">
+        <nav class="flex justify-around">
+            <ul class="flex space-x-8">
+                <li><i class="ri-home-2-line text-white text-3xl cursor-pointer hover:text-[#DDE85B] transition duration-300"></i></li>
+                <li><i class="ri-search-line text-white text-3xl cursor-pointer hover:text-[#DDE85B] transition duration-300"></i></li>
+                <li><i class="ri-add-box-line text-white text-3xl cursor-pointer hover:text-[#DDE85B] transition duration-300"></i></li>
+                <li><i class="ri-notification-line text-white text-3xl cursor-pointer hover:text-[#DDE85B] transition duration-300"></i></li>
+                <li><i class="ri-mail-line text-white text-3xl cursor-pointer hover:text-[#DDE85B] transition duration-300"></i></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
