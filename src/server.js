@@ -16,27 +16,35 @@ app.listen(porta, () => console.log(`Servidor rodando na porta ${porta}`));
 
 //  ROTA POST: Criar usuário
 
-app.post("/registe", (req, res) => {
-    const { nome, email, senha_hash } = req.body;
+app.post("/register", async (req, res) => {
+    const { nome, email, senha } = req.body;
 
-    if (!nome || !email || !senha_hash) {
+    if (!nome || !email || !senha) {
         return res.status(400).json({ erro: "Dados incompletos" });
     }
 
-    const sql = "INSERT INTO usuarios (nome, email, senha_hash) VALUES (?, ?, ?)";
+    try {
+        // 🔐 Criptografar senha ANTES de salvar
+        const senhaHash = await bcrypt.hash(senha, 10);
 
-    db.query(sql, [nome, email, senha_hash], (err, result) => {
-        if (err) {
-            console.error("Erro ao inserir usuário:", err);
-            return res.status(500).json({ erro: "Erro ao salvar usuário" });
-        }
+        const sql = "INSERT INTO usuarios (nome, email, senha_hash) VALUES (?, ?, ?)";
 
-        res.json({
-            id: result.insertId,
-            nome,
-            email
+        db.query(sql, [nome, email, senhaHash], (err, result) => {
+            if (err) {
+                console.error("Erro ao inserir usuário:", err);
+                return res.status(500).json({ erro: "Erro ao salvar usuário" });
+            }
+
+            res.json({
+                id: result.insertId,
+                nome,
+                email
+            });
         });
-    });
+
+    } catch (err) {
+        res.status(500).json({ erro: "Erro interno ao registrar usuário" });
+    }
 });
 
 
