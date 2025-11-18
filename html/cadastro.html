@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthly - Cadastro</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="/PI-Healthy/css/cadastro.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-left">
+            <img src="/PI-Healthy/img/logo_sem_nome-removebg-preview.png" class="logo">
+            <h1 class="brand">Healthly</h1>
+        </div>
+    </header>
+
+    <main class="register-main">
+        
+
+        <form class="register-form">
+            <div class="input-group">
+                <label>Email</label>
+                <input type="email" placeholder="seuemail@gmail.com" id="email" required>
+            </div>
+
+            <div class="input-group">
+                <label>Usuário</label>
+                <input type="text" placeholder="seu_usuario" id="nomeUsuario" required>
+            </div>
+
+            <div class="input-group">
+                <label>Senha</label>
+                <input type="password" id="senha" placeholder="••••••••" required>
+            </div>
+
+            <button type="button" onclick="cadastrar()" class="register-btn">Cadastrar</button>
+        </form>
+
+        <p class="login-link">
+            Já tem conta? <a href="login.html">Entrar</a>
+        </p>
+    </main>
+<script src="/PI-Healthy/js/cadastrar.js"></script>
+</body>
+</html>

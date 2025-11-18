@@ -1,0 +1,109 @@
+body {
+    background-color: #0f0f0f;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #0f0f0f;
+}
+
+
+
+.logo {
+    width: 200px;
+    height: 180px;
+}
+
+.brand {
+    color: #facc15;
+    font-size: 25px;
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+/* Register container */
+.register-main {
+    margin-top: 3rem;
+    padding: 1.5rem;
+}
+
+.register-title {
+    text-align: center;
+    color: #facc15;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    margin-bottom: 0.25rem;
+    color: #facc15;
+    font-weight: bold;
+}
+
+.input-group input {
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    border: 1px solid #333;
+    background-color: #111;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.input-group input:focus {
+    border-color: #facc15;
+}
+
+/* Botão */
+.register-btn {
+    padding: 0.9rem;
+    background-color: #facc15;
+    border: none;
+    border-radius: 2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.register-btn:hover {
+    background-color: #eab308;
+}
+
+/* Login link */
+.login-link {
+    text-align: center;
+    margin-top: 1rem;
+    color: #d1d5db;
+}
+
+.login-link a {
+    color: #facc15;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
