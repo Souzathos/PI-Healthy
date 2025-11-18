@@ -1,1 +1,11 @@
 # PI-Healthy
+
+CREATE DATABASE healthly;
+USE healthly;
+
+CREATE TABLE user (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nome VARCHAR(255) NOT NULL,
+  email VARCHAR(255) NOT NULL UNIQUE,
+  senha_has VARCHAR(255) NOT NULL
+);
