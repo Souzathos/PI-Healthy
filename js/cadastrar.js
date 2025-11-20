@@ -11,7 +11,7 @@ async function cadastrar(e) {
     }
 
     try {
-        const resp = await fetch("http://localhost:3000/register", {
+        const resp = await fetch("http://localhost:5500/register", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ nome, email, senha })

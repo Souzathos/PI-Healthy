@@ -3,7 +3,7 @@ const cors = require('cors');
 const bcrypt = require('bcrypt'); // necessário para login
 
 const app = express();
-const porta = 3000;
+const porta = 5500;
 
 app.use(cors());
 app.use(express.json());
@@ -24,7 +24,7 @@ app.post("/register", async (req, res) => {
     }
 
     try {
-        // 🔐 Criptografar senha ANTES de salvar
+        // Criptografar senha ANTES de salvar
         const senhaHash = await bcrypt.hash(senha, 10);
 
         const sql = "INSERT INTO usuarios (nome, email, senha_hash) VALUES (?, ?, ?)";
